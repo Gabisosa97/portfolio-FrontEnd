@@ -1,0 +1,43 @@
+div {
+  background-color: #6f8294;
+  text-align: center;
+  color:azure;
+}
+
+#editar {
+  float: right;
+}
+
+/* Etiqueta Nombre */
+#nombre {
+  font-weight: bold;
+  font-size: 150%;
+}
+
+/* Foto de perfil */
+@media (min-width: 576px) {
+  #mypic {
+    position: absolute;
+    width: 180px;
+    border-radius: 100%;
+    box-shadow: 3px 3px 3px grey;
+    left: 3%;
+    top: 70px;
+  }
+  .descripcion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 575px) {
+  #mypic {
+    position: sticky;
+    width: 40%;
+    border-radius: 100%;
+    box-shadow: 3px 3px 3px grey;
+    left: 3%;
+    top: 150px;
+  }
+}

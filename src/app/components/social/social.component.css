@@ -1,0 +1,32 @@
+@media (max-width: 575px) {
+  #logoAPlg {
+    display: none;
+  }
+  #logoAPsm {
+    width: 150px;
+  }
+}
+
+@media (min-width: 576px) {
+  #logoAPsm {
+    display: none;
+    
+  }
+  #logoAPlg {
+    width: 350px;
+  }
+}
+
+img {
+  width: 40px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.btn {
+  margin-right: 0.5em;
+}

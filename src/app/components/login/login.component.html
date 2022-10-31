@@ -1,0 +1,48 @@
+<link
+  href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  rel="stylesheet"
+  id="bootstrap-css"
+/>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="sidenav">
+  <div class="login-main-text">
+    <h2>Login</h2>
+    <p>Inicie sesion o registrece para continuar.</p>
+  </div>
+</div>
+<div class="main">
+  <div class="col-md-6 col-sm-12">
+    <div class="login-form">
+      <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+        <div class="form-group">
+          <label>Usuario</label>
+          <input
+            type="text"
+            id="nombreUsuario"
+            class="form-control form-control-lg"
+            [(ngModel)]="nombreUsuario"
+            [ngModelOptions]="{standalone: true}"
+            required
+            placeholder="User Name"
+          />
+        </div>
+        <div class="form-group">
+          <label>Contraseña</label>
+          <input
+            type="password"
+            id="password"
+            class="form-control form-control-lg"
+            [(ngModel)]="password"
+            [ngModelOptions]="{standalone: true}"
+            required
+            placeholder="Password"
+          />
+        </div>
+        <button type="submit" class="btn btn-black">Login</button>
+      </form>
+    </div>
+  </div>
+</div>

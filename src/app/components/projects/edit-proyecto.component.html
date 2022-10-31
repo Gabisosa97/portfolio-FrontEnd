@@ -1,0 +1,63 @@
+<div class="container" *ngIf="proyecto">
+  <div class="row">
+    <div>
+      <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+        <div class="form-group">
+          <label for="nombre">Nombre de proyecto</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nombre"
+            [(ngModel)]="proyecto.nombre"
+            name="nombre"
+            [ngModelOptions]="{ standalone: true }"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="descripcion">Descripcion de proyecto</label>
+          <input
+            type="text"
+            class="form-control"
+            id="descripcion"
+            [(ngModel)]="proyecto.descripcion"
+            name="descripcion"
+            [ngModelOptions]="{ standalone: true }"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="link">Enlace de proyecto</label>
+          <input
+            type="text"
+            class="form-control"
+            id="link"
+            [(ngModel)]="proyecto.link"
+            name="link"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="img">Foto</label>
+          <input
+            type="file"
+            class="form-control"
+            id="img"
+            [(ngModel)]="proyecto.img"
+            (change)="uploadImage($event)"
+            accept=".jpg, .png, .jpeg"
+            name="img"
+            [ngModelOptions]="{ standalone: true }"
+            required
+          />
+        </div>
+        <div class="imagen">
+          <img src="{{ imageService.url }}" width="200px" />
+        </div>
+        <div>
+          <button class="btn btn-primary">Editar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

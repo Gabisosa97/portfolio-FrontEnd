@@ -1,0 +1,47 @@
+<div class="row">
+  <div class="container">
+    <a
+      href="https://www.argentina.gob.ar/produccion/argentina-programa"
+      target="_blank"
+    >
+      <img src="../../../assets/argprog.png"  id="logoAPlg"/>
+      <img src="../../../assets/APLogo.png" id="logoAPsm" />
+    </a>
+
+    <div class="logo"></div>
+    <div class="social">
+      <a href="https://www.linkedin.com/in/gabisosa97/" target="_blank"
+        ><img src="../../../assets/linkedin.png" alt=""
+      /></a>
+      <a
+        href="https://github.com/Gabisosa97/ProyectoIntegrador_SosaGabriel"
+        target="_blank"
+        ><img src="../../../assets/github.png" alt=""
+      /></a>
+      <a href="mailto:gabisosa97@gmail.com" target="_blank"
+        ><img src="../../../assets/gmail.png" alt=""
+      /></a>
+      <a
+        href="https://wa.me/5492634213316?text=Hola%20Gabriel,%20vi%20tu%20Curriculum%20y%20estoy%20interesado%20en%20contactarte.%20Saludos."
+        target="_blank"
+        ><img src="../../../assets/wpp.png" alt=""
+      /></a>
+      <button
+        type="button"
+        class="btn btn-outline-light"
+        (click)="login()"
+        *ngIf="!isLogged"
+      >
+        Login
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-light"
+        (click)="onLogOut()"
+        *ngIf="isLogged"
+      >
+        Logout
+      </button>
+    </div>
+  </div>
+</div>
