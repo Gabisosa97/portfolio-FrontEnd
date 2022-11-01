@@ -7,13 +7,21 @@
   width: auto;
 }
 
-.p1,
-.p2 {
+.pt1,
+.pt2 {
   display: inline-block;
-  text-align: justify;
+  text-align: justify
+}
+
+.table{
+  color:azure;
 }
 
 .img-project {
   width: 100%;
   box-shadow: 10px 10px 20px rgb(253, 110, 0);
+}
+
+div{
+  color:azure;
 }

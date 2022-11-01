@@ -1,5 +1,5 @@
 <div class="row">
-  <h1>Proyectos Realizados</h1>
+  <h1>Proyectos Realizados <i class="bi bi-person-workspace"></i></h1>
   <div class="col-lg-2">
     <button
       type="button"
@@ -17,16 +17,23 @@
         <tr *ngFor="let pr of proyecto">
           <td>{{ pr.nombre }}</td>
           <td>{{ pr.descripcion }}</td>
-          <td><a href="{{pr.link}}" style="color:white"target="_blank">Enlace</a></td>
           <td>
             <div
               class="col-sm-12 col-md-3 col-lg-3 offset-md-3 offset-lg-3 pt2"
             >
-              <img style="width: auto" src="{{ pr.img }}" class="img-fluid img-project" />
+              <a href="{{ pr.link }}" target="_blank"
+                ><img
+                  style="width: auto"
+                  src="{{ pr.img }}"
+                  class="img-fluid img-project"
+              /></a>
             </div>
           </td>
           <td *ngIf="isLogged">
-            <button class="btn btn-light" routerLink="/editproyecto/{{ pr.id }}">
+            <button
+              class="btn btn-light"
+              routerLink="/editproyecto/{{ pr.id }}"
+            >
               <i class="bi bi-pencil-fill"></i>Editar
             </button>
           </td>

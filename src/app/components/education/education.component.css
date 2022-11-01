@@ -1,11 +1,16 @@
-.row{
-    padding: 20px;
+.row {
+  padding: 20px;
 }
 
-div{
-    background-color: #6f8294;
+div {
+  background-color: #6f8294;
+  color: azure;
 }
 
-h1,h3{
-    display: inline;
+.table {
+  color: azure;
+}
+h1,
+h3 {
+  display: inline;
 }
